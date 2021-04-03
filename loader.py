@@ -1,8 +1,10 @@
 import pandas as pd
+from pandas.io.json import json_normalize
 
 
-df = pd.read_csv('/home/tik_home/repositories/stravanalytics/data_source/activities.csv')
+activities = json_normalize(my_dataset)
 
 print(df.describe())
+
 
 print(df.mean())
